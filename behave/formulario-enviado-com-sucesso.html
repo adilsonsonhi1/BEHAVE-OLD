@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=600, must-revalidate">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main_v24.css">
+    <link rel="stylesheet" href="css/style_v24.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Formulário enviado com sucesso</title>
+    <!-- redirecionar -->
+    <script>
+        // Chamar a função ao carregar a página
+        window.onload = verificarAcessoDireto;
+        
+        // Função para verificar se o documento foi acessado diretamente pela URL
+        function verificarAcessoDireto() {
+          if (document.referrer === "") {
+            // Se não houver referência, redirecionar para outra página
+            window.location.replace("https://www.behave-academy.com");
+          }
+        }
+  </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0R8MXX9SZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-B0R8MXX9SZ');
+    </script>
+</head>
+<body class="body">
+    <!-- start-here -->
+    <div id="form-sent"  class="global-container">
+        <div class="signup-sucess-container flex-column align-center justify-between">
+            <a class="signup-logo" href="https://www.behave-academy.com">
+                <img class="behave-logo" src="assets/images/behave-logo-dark.png" alt="logotipo da behave academy">
+            </a>
+
+            <div class="signup-sucess-content flex-column">
+                <h5 style="text-align: center;">Análise de Cadastro</h5>
+                <p style="gap: 8px; color: var(--text-gray); text-align: center;">Obrigado pelas informações! Clique no botão abaixo para concluir sua matrícula e ativar sua conta.</p>
+                <a class="button primary-button" href="https://wa.me/+244924187156" target="_blank" rel="noopener noreferrer">Ativar minha conta</a>
+            </div>
+
+            <footer class="signup-footer flex-column align-center">
+                <small class="small">&copy; 2024 Todos os direitos reservados | Encontrou algum problema? Entre em contacto com o <a class="footer-link" href="https://wa.me/+244924187156" target="_blank" rel="noopener noreferrer">Suporte</a>.</small>
+              </footer>
+        </div>
+    </div>
+</body>
+</html>

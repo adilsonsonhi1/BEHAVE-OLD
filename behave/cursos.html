@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=600, must-revalidate">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main_v24.css">
+    <link rel="stylesheet" href="css/style_v24.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Categoria de cursos</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0R8MXX9SZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-B0R8MXX9SZ');
+    </script>
+</head>
+<body class="body">
+    <!-- start-here -->
+    <div id="course-categories" class="global-container">
+        <!-- ----------------------------- hero-container ----------------------------- -->
+        <div class="hero-container">
+            <!-- header -->
+            <header class="header">
+                <!-- nav-header -->
+                <nav class="nav-header flex-row justify-between align-center">
+                    <!-- header-list -->
+                    <ul class="header-list">
+                        <li class="list-item">
+                            <a class="nav-link" href="https://www.behave-academy.com">
+                                <img class="behave-logo" src="assets/images/behave-logo-white.png" alt="logotipo da behave academy">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- header-list -->
+                    <ul class="header-list flex-row align-center">
+
+                        <!-- header-sub-list -->
+                        <ul class="header-sub-list flex-row ">
+                            <li class="list-item"><a class="nav-link" href="https://www.behave-academy.com">Início</a></li>
+                            <li class="list-item"><a class="nav-link" href="https://www.behave-academy.com/cursos">Cursos</a></li>
+                            <li class="list-item"><a class="nav-link" href="https://www.behave-academy.com/curso-de-ux-ui-design">UX/UI design</a></li>
+                            <li class="list-item"><a class="nav-link" href="mailto:contacto@behave-academy.com">Contacto</a></li>
+                        </ul>
+
+                        <!-- header-sub-list -->
+                        <ul class="header-sub-list flex-row">
+                            <li class="list-item"><a class="button tertiary-button flex-row align-center" href="https://app.behave-academy.com" target="_blank" rel="noopener noreferrer"><img src="assets/icons/user.svg" alt=""><span>Minha conta</span></a></li>
+                            <li class="list-item"><a class="button secondary-button flex-row align-center" href="https://www.behave-academy.com/matricula"><img src="assets/icons/graduate.svg" alt=""><span>Matricule-se</span></a></li>
+                        </ul>
+                    </ul>
+
+                    <!-- header-list-mobile -->
+                    <ul class="header-list-mobile">
+                        <li>
+                            <button class="offcanvas-btn offcanvas-open-btn button secondary-button" type="button" aria-label="Open Menu">
+                                <img src="assets/icons/menu-burger.svg" alt="burger-icon">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- hero -->
+            <div class="hero fade-animation flex-column">
+
+                <!-- section -->
+                <section class="section flex-column align-center">
+                    <div class="description flex-column align-center">
+                        <h1 class="title text-dual-colors">O que você quer aprender hoje?</h1>
+                        <!-- <p class="paragraph">Aumente suas habilidades com os cursos e certificações online mais confiáveis.</p> -->
+                    </div>
+
+                    <div class="search-container">
+                        <form id="searchForm" class="flex-row">
+                            <input class="search" type="text" id="searchInput" placeholder="Digite para pesquisar">
+                            <button class="search-button flex-row justify-center align-center" onclick="searchItems()">
+                                <span class="search-text">Pesquisar</span>
+                                <img class="search-icon" src="assets/icons/search.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- ----------------------------- courses-container ----------------------------- -->
+        <div class="courses-container ba-container" id="listContainer" style="min-height: 100vh;">
+            <div class="courses-content ba-center">
+                <h2 id="listTitle"></h2> <br>
+
+                <div id="searchTagArea" style="display: none;">
+                    <p class="paragraph">Resultado da pesquisa: <span id="searchTag"></span> <button class="cleaner-button" onclick="clearSearchTag()">Limpar Pesquisa</button></p>
+                </div>
+                
+                <ul id="itemList" class="course-box-container">
+
+                    <li class="list-item" data-tags="cursos, curso, ui ux, ui, ux, ui design, ux design">
+                        <!-- course-card -->
+                        <div class="course-card">
+
+                            <!-- course-bg -->
+                            <div class="course-bg" id="course-bg-1">
+                                <!-- <span class="soon">Em breve</span> -->
+                                <span class="now">Acesse agora</span>
+                            </div>
+
+                            <!-- course-content -->
+                            <div class="course-content flex-column justify-between">
+                                <!-- course-content-top -->
+                                <div class="course-content-top flex-column">
+                                    <h2 class="course-title">Curso de Design de Interfaces para Websites e Aplicativos</h2>
+
+                                    <ul class="course-list">
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/book.svg" alt=""><small class="small">7 Módulos</small></li>
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/user-time.svg" alt=""><small class="small">58 aulas</small></li>
+                                    </ul>
+                                    
+                                    <p class="course-paragraph">Transforme-se em um expert da criação de interface de sistemas web e aplicativos móveis desenvolvendo suas habilidades em UX/UI design.</p>
+                                </div>
+
+                                <!-- course-content-bottom -->
+                                <div class="course-content-bottom flex-column">
+                                    <ul class="course-list">
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/star.svg" alt=""></li>
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/star.svg" alt=""></li>
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/star.svg" alt=""></li>
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/star.svg" alt=""></li>
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/star.svg" alt=""></li>
+                                        <!-- <li><small class="small">Mais de 100 alunos</small></li> -->
+                                    </ul>
+
+                                    <div class="course-buttons flex-column">
+                                        <a class="button primary-button" href="https://www.behave-academy.com/matricula">Matricule-se por 19.990 Kz</a>
+                                        <a class="button alternative-button" href="https://www.behave-academy.com/curso-de-ux-ui-design">Mais informações</a>
+                                    </div>
+            
+                                    <ul class="course-list">
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/clock.svg" alt=""><small class="small">Publicado: 01/07/2024</small></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-tags="cursos, curso, desenvolvimento, desenvolvimento web, sites, websites, frontend">
+                        <!-- course-card -->
+                        <div class="course-card">
+
+                            <!-- course-bg -->
+                            <div class="course-bg">
+                                <!-- <span class="unavailable">Indisponível</span> -->
+                                <span class="soon">Em breve</span>
+                            </div>
+
+                            <!-- course-content -->
+                            <div class="course-content flex-column justify-between">
+                                <!-- course-content-top -->
+                                <div class="course-content-top flex-column">
+                                    <h2 class="course-title">Curso de Desenvolvimento Web (Frontend)</h2>
+
+                                    <ul class="course-list">
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/book.svg" alt=""><small class="small">...</small></li>
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/user-time.svg" alt=""><small class="small">...</small></li>
+                                    </ul>
+
+                                    <p class="course-paragraph">Domine o desenvolvimento web front criando sistemas web incríveis com HTML, CSS, JavaScript e mais.</p>
+                                </div>
+
+                                <!-- course-content-bottom -->
+                                <div class="course-content-bottom flex-column">
+                                    <ul class="course-list">
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/star-disabled.svg" alt=""></li>
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/star-disabled.svg" alt=""></li>
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/star-disabled.svg" alt=""></li>
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/star-disabled.svg" alt=""></li>
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/star-disabled.svg" alt=""></li>
+                                        <li><small class="small"></small></li>
+                                    </ul>
+    
+                                    <div class="course-buttons flex-column">
+                                        <button class="button disabled-button not-allowed-button">Matricule-se por</button>
+                                        <button class="button disabled-button not-allowed-button">Mais informações</button>
+                                    </div>
+            
+                                    <ul class="course-list">
+                                        <li class="course-list-item flex-row align-center"><img src="assets/icons/clock.svg" alt=""><small class="small">Publicado: --/--/----</small></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ----------------------------- footer-container ----------------------------- -->
+        <footer class="footer-container">
+            <!-- footer-container -->
+            <div class="footer-content">
+                <!-- footer-top -->
+                <section class="footer-top flex-column align-center">
+                    <a class="footer-logo" href="https://www.behave-academy.com"><img class="behave-logo" src="assets/images/behave-logo-white.png" alt="BehaveAcademy"></a>
+                    <small class="footer-copyright">&copy 2024 www.behave-academy.com - Todos os direitos reservados</small>
+                    <small class="footer-paragraph">Behave Academy é uma empresa dedicada ao ensino das principais áreas de TI. Embora não possuamos escritórios físicos, nossa sede está localizada em Luanda-Angola.</small>
+                </section>
+
+                <!-- footer-mid -->
+                <section class="footer-mid">
+
+                    <ul class="footer-list flex-row justify-between">
+
+                        <ul class="footer-sub-list flex-row">
+                            <li class="list-item"><a class="footer-link" href="https://www.behave-academy.com">Início</a></li>
+                            <li class="list-item"><a class="footer-link" href="https://www.behave-academy.com/cursos">Cursos</a></li>
+                            <li class="list-item"><a class="footer-link" href="https://www.behave-academy.com/curso-de-ux-ui-design">Curso de UX/UI Design</a></li>
+                            <li class="list-item"><a class="footer-link" href="mailto:contacto@behave-academy.com">Contacto</a></li>
+                        </ul>
+
+                        <ul class="footer-sub-list flex-row">
+                            <li class="list-item"><a class="footer-link" href="https://www.behave-academy.com/termos-de-uso" target="_blank" rel="noopener noreferrer">Termos de Uso</a></li>
+                            <li class="list-item"><a class="footer-link" href="https://www.behave-academy.com/politica-de-privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></li>
+                        </ul>
+
+                    </ul>
+
+                    <ul class="footer-list flex-row justify-between">
+
+                        <ul class="footer-sub-list flex-row">
+                            <li class="list-item"><span class="contact-info" style="color: var(--text-gray) !important;">contacto@behave-academy.com</span></li>
+                            <li class="list-item"><span class="contact-info" style="color: var(--text-gray) !important;">(+244) 924 187 156</span></li>
+                        </ul>
+
+                        <ul class="footer-sub-list flex-row align-center">
+                            <li class="list-item">
+                                <a class="footer-link" href="https://www.facebook.com/profile.php?id=61561728207283" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/icons/footer-facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="footer-link" href="https://www.instagram.com/behave.academy/" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/icons/footer-instagram.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="footer-link" href="https://www.youtube.com/@behave.academy" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/icons/footer-youtube.svg" alt="youtube">
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="footer-link" href="https://www.linkedin.com/company/behaveacademy.lms" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/icons/footer-linkedin.svg" alt="linkedin">
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                    
+                </section>
+
+                <!-- footer-bottom -->
+                <section class="footer-bottom">
+                    <small>
+                        Made by
+                        <a href="https://www.adilsonsonhi.com" target="_blank" rel="noopener noreferrer" style="color: #a7a7a9 !important;"> Adilson Sonhi </a>
+                        with love 
+                        <img width="12px" src="assets/images/heart.png" alt="">
+                    </small>
+                </section>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ----------------------------- offcanvas ----------------------------- -->
+    <div class="offcanvas">
+        <div class="offcanvas-header flex-row justify-between align-center">
+            <div>
+                <img class="behave-logo" src="assets/images/behave-logo-dark.png" alt="logotipo da behave academy">
+            </div>
+            <button class="offcanvas-btn offcanvas-close-btn  button secondary-button" type="button" aria-label="Close Menu">
+                <img src="assets/icons/close-black.svg" alt="">
+            </button>
+        </div>
+
+        <div class="offcanvas-content">
+            <div class="offcanvas-body">
+                <nav class="offcanvas-nav flex-column justify-between">
+                    <ul class="offcanvas-list flex-column">
+                        <li class="list-item"><a class="offcanvas-link button secondary-button" href="https://www.behave-academy.com">Início</a></li>
+                        <li class="list-item"><a class="offcanvas-link button secondary-button" href="https://www.behave-academy.com/cursos">Cursos</a></li>
+                        <li class="list-item"><a class="offcanvas-link button secondary-button" href="https://www.behave-academy.com/curso-de-ux-ui-design">UX/UI Design</a></li>
+                        <li class="list-item"><a class="offcanvas-link button secondary-button" href="mailto:contacto@behave-academy.com">Contacto</a></li>
+                    </ul>
+
+                    <div class="offcanvas-list flex-column">
+                        <a class="button primary-button" href="https://www.behave-academy.com/matricula">Matricule-se</a>
+                        <a class="button alternative-button" href="https://app.behave-academy.com" target="_blank">Minha conta</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- overlay -->
+    <div class="overlay"></div>
+
+    <!-- ----------------------------- body-fixed-buttons ----------------------------- -->
+    <!-- top top button -->
+    <button id="toTopBtn" class="to-top-button" title="Go to top"><img src="assets/icons/top-arrow.svg" alt="top-arrow-icon"></button>
+    <!-- whatsApp button -->
+    <a id="whatsappBtn" class="whatsapp-button" href="https://wa.me/+244924187156" target="_blank" rel="noopener noreferrer"><img class="img" src="assets/icons/whatsapp.svg" alt="whatsapp-icon"></a>
+    <!-- hide whatsApp button -->
+    <button id="hideButton" onclick="hideElement()"><img class="img" src="assets/icons/close-gray.svg" alt="close-icon"></button>
+
+    <!-- js files -->
+    <script src="js/buttons.js"></script>
+    <script src="js/offcanvas.js"></script>
+    <script src="js/searchFilter.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=600, must-revalidate">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main_v24.css">
+    <link rel="stylesheet" href="css/style_v24.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Formulário de cadastro - Behave Academy</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0R8MXX9SZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-B0R8MXX9SZ');
+    </script>
+</head>
+<body class="body">
+    <!-- start-here -->
+    <div id="signup"  class="global-container">
+        <div class="form-bg flex-column align-center justify-between">
+
+            <a class="signup-logo" href="www.https://behave-academy.com">
+               <img class="behave-logo" src="assets/images/behave-logo-dark.png" alt="logotipo da behave academy">
+            </a>
+
+            <div class="form-container">
+               <form action="https://behave-academy.us17.list-manage.com/subscribe/post?u=0eb2df206cf10a51ef4911680&amp;id=39d67cafc7&amp;f_id=001e3de1f0" method="post" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="" id="stepForm" class="form-step">
+                  <!-- step 1 -->
+                  <fieldset id="step1" class="fieldset-container">
+
+                     <ul class="progress-list flex-row justify-center">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
+
+                     <div class="fieldset-content">
+                        <legend class="legend">Informações Pessoais</legend>
+
+                        <small class="access-acount">Já tem uma conta? <a class="form-link" href="https://app.behave-academy.com">Acesse agora.</a></small>
+
+                        <label for="mce-FIRST_NAME">Primeiro Nome:</label>
+                        <input class="input-name" type="text" id="firstName" name="FIRST_NAME"  required>
+
+                        <label for="mce-LAST_NAME">Último Nome:</label>
+                        <input class="input-name" type="text" id="lastName" name="LAST_NAME" required>
+
+                        <label for="mce-AGE">Idade</label>
+                        <div class="select-container">
+                           <select id="age" name="AGE" required>
+                           <option value="" disabled selected>Selecione sua idade</option>
+                        </select>
+                        </div>
+
+                        <label for="mce-GENDER">Género:</label>
+                        <div class="select-container">
+                           <select id="gender" name="GENDER" required>
+                           <option value="" disabled selected>Selecione seu género</option>
+                        </select>
+                        </div>
+                        
+                        <button class="nextStep button primary-button" type="button" onclick="nextStep(1)">Próximo</button>
+                     </div>
+                  </fieldset>
+
+                  <!-- step 2 -->
+                  <fieldset id="step2" class="fieldset-container" style="display: none;">
+
+                     <ul class="progress-list flex-row justify-center">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
+
+                     <div class="fieldset-content">
+                        <legend class="legend">Informações de Localização</legend>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="EMAIL" placeholder="joao.silva@gmail.com" required>
+
+                        <label for="mce-COUNTRY">País:</label>
+                        <div class="select-container">
+                           <select id="country" name="COUNTRY" onchange="toggleProvinceField()" required>
+                           <option value="" disabled selected>Selecione o país</option>
+                        </select>
+                        </div>
+
+                        <div id="provinceField" style="display: none;">
+                           <label for="mce-CITY">Província:</label>
+                           <div class="select-container">
+                              <select id="city" name="CITY" required>
+                                 <option value="" disabled selected>Selecione sua província</option>
+                           </select>
+                           </div>
+                        </div>
+
+                        <label for="mce-CODE">Número de telemóvel</label>
+                        <div class="tel-container ">
+
+                           <select class="code" id="code" name="CODE">
+                              <option class="option" value="" disabled selected>🇦🇴 +244</option>
+                           </select>
+
+                           <input class="phone" type="tel" id="phone" name="PHONE" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                        </div>
+
+                        <button class="nextStep button primary-button" type="button" onclick="nextStep(2)">Próximo</button>
+                        <button class="prevStep button secondary-button" type="button" onclick="prevStep(2)">Voltar</button>
+                     </div>
+                  </fieldset>
+
+                  <!-- step 3 -->
+                  <fieldset id="step3" class="fieldset-container" style="display: none;">
+
+                     <ul class="progress-list flex-row justify-center">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
+
+                     <div class="fieldset-content">
+                        <legend class="legend">Assinatura</legend>
+
+                        <label for="mce-COURSE">Escolha o Curso:</label>
+                        <div class="select-container">
+                           <select id="course" name="COURSE" required>
+                           <option value="" disabled selected>Selecione a modalidade do curso</option>
+                        </select>
+                        </div>
+                        
+                        <label for="mce-EDUCATION">Nível de Escolaridade:</label>
+                        <div class="select-container">
+                           <select id="education" name="EDUCATION" required>
+                           <option value="" disabled selected>Selecione seu nível de escolaridade</option>
+                        </select>
+                        </div>
+                        
+                        <div id="mce-responses" class="clear foot">
+                           <div class="response" id="mce-error-response" style="display: none;"></div>
+                           <div class="response" id="mce-success-response" style="display: none;"></div>
+                        </div>
+                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                           /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                           <input type="text" name="b_0eb2df206cf10a51ef4911680_39d67cafc7" tabindex="-1" value="">
+                        </div>
+
+                        <div class="flex-row align-center" style="gap: .5rem;">
+                           <input style="height: fit-content !important;" type="checkbox" name="terms" id="terms" required>
+                           <p class="terms-and-privacy">Eu concordo com os <a href="https://behave-academy.com/termos-de-uso" target="_blank">Termos de Uso</a> e <a href="https://behave-academy.com/politica-de-privacidade" target="_blank">Política de Privacidade</a>.</p>
+                        </div>
+
+                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="submit button primary-button" value="Enviar">
+
+                        <button class="prevStep button secondary-button" type="button" onclick="prevStep(3)">Voltar</button>
+                     </div>
+                     
+                  </fieldset>
+               </form>
+            </div>
+
+            <footer class="signup-footer flex-column align-center">
+              <small class="small">&copy; 2024 Todos os direitos reservados | Encontrou algum problema? Entre em contacto com o <a class="footer-link" href="https://wa.me/+244924187156" target="_blank" rel="noopener noreferrer">Suporte</a>.</small>
+            </footer>
+
+         </div>
+    </div>
+
+    <!-- js files -->
+    <script src="js/signup.js"></script>
+</body>
+</html>
