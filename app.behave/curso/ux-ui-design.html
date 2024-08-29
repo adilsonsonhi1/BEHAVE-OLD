@@ -1,0 +1,1080 @@
+<!-- conteudo.html -->
+<!DOCTYPE html>
+<html lang="pt">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- bootstrap link -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="behave_v14.css">
+      <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <title>Curso Completo de UX/UI Design</title>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0R8MXX9SZ"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'G-B0R8MXX9SZ');
+      </script>
+   </head>
+   <body>
+      <!-- global-container -->
+      <div id="global-container" >
+         <div id="center">
+            
+            <!-- ================================= main-header ================================= -->
+            <header class="header">
+                <!-- nav-header -->
+               <nav class="nav-header">
+                <!-- header-logo -->
+                <a href="https://app.behave-academy.com/curso/ux-ui-design.html"><img class="behave-logo" src="assets/images/behave-logo-white.png" alt="behave-logo"></a>
+                  <!-- nav-list -->
+                  <ul class="nav-list">
+                    <!-- dropdown -->
+                     <li class="dropdown social-media-header">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/icons/share.svg" alt="ícone de redes sociais">
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=61561728207283" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                           <li><a class="dropdown-item" href="https://www.instagram.com/behave.academy/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                           <li><a class="dropdown-item" href="https://www.youtube.com/@behave.academy" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                           <li><a class="dropdown-item" href="https://www.linkedin.com/company/behaveacademy.lms" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                        </ul>
+                     </li>
+
+                     <!-- dropdown -->
+                     <li class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/icons/help.svg" alt="ícone de ajuda">
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="https://wa.me/+244924187156" target="_blank" rel="noopener noreferrer">Ajuda/Suporte</a></li>
+                           <li><a class="dropdown-item" href="https://discord.gg/54r2Ba9s" target="_blank" rel="noopener noreferrer">Comunidade</a></li>
+                        </ul>
+                     </li>
+
+                     <!-- dropdown -->
+                     <li class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <div class="profile-pic-container"><img class="profile-pic" src="assets/icons/user.svg" alt="ícone do perfil"></div>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item disabled" href="#">Meu Perfil</a></li>
+                           <li><a class="dropdown-item disabled" href="#">Definições</a></li>
+                           <li><a class="dropdown-item" id="logoutButton" href="#">Sair</a></li>
+                        </ul>
+                     </li>
+
+                     <!-- menu-bars -->
+                     <li>
+                        <button class="btn menu-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/icons/menu-bars.svg" alt="ícone do menú"></button>
+                     </li>
+                  </ul>
+               </nav>
+            </header>
+
+            <!-- ================================= main-content ================================= -->
+            <main class="main-content">
+               <div class="video-player-container">
+
+                  <!-- video-player -->
+                  <div id="video-player">
+                     <video id="video" width="100%" height="100%" controls controlsList="nodownload" ></video>
+                  </div>
+
+                  <!-- video-description -->
+                  <div class="video-detail-container">
+                     <div class="video-detail-content">
+                        <h3 class="video-detail-title" id="video-title">Selecione uma aula para começar</h3>
+                        <!-- <p class="video-description-text">Curso de UI/UX Design 2024, criado por Adilson Sonhi</p> -->
+                        <p class="badge-container">
+                           <span class="badge">Experiência do usuário</span>
+                           <span class="badge">Interface do usuário </span>
+                           <span class="badge">UX/UI Design</span>
+                           <span class="badge">Figma</span>
+                           <!-- <span class="badge">Adilson Sonhi</span> -->
+                        </p>
+                        
+                     </div>
+                  </div>
+
+                  <!-- video-player-description -->
+                  <div class="video-nav-tabs">
+
+                    <!-- nav -->
+                     <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <!-- nav-item -->
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Descrição do Curso</button>
+                        </li>
+
+                        <!-- nav-item -->
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="pills-instructor-tab" data-bs-toggle="pill" data-bs-target="#pills-instructor" type="button" role="tab" aria-controls="pills-instructor" aria-selected="false">Sobre o instrutor</button>
+                        </li>
+
+                        <!-- nav-item -->
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Comunidade</button>
+                        </li>
+
+                        <!-- nav-item -->
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Material de Apoio</button>
+                        </li>
+
+                        <!-- nav-item -->
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Dúvidas</button>
+                        </li>
+                     </ul>
+
+                     <!-- tab-content -->
+                     <div class="tab-content" id="pills-tabContent">
+
+                        <!-- tab-pane -->
+                        <div class="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                           <div class="tab-center overview">
+                              <p class="overview-paragraph">Bem-vindo ao Curso de Design de Interface para Websites e Aplicativos - 7 módulos & 58 aulas (Mais de 8h20min de conteúdo)</p>
+
+                              <p class="overview-paragraph">
+                                 Este curso é projetado para te transformar em um especialista na criação de interfaces de usuário intuitivas e experiências de usuário envolventes.
+                               </p>
+                              
+                              <div id="conteudo" class="oculto">
+                                <div class="hidden-center">
+                                 <p class="overview-paragraph">
+                                    Abrangendo desde os fundamentos do design até técnicas avançadas, este curso é ideal para quem deseja entrar no mundo do design digital ou aprimorar suas habilidades existentes. Com uma abordagem prática e teórica, você aprenderá a projetar produtos que não apenas atraem visualmente, mas também oferecem uma experiência de uso incrível.
+                                 </p>
+
+                                 <h5>
+                                    O que você vai aprender:
+                                 </h5>
+
+                                 <ul class="overview-list-container">
+                                    <ul class="overview-list">
+                                       <li class="overview-list-item"><img src="assets/icons/dashicons.svg" alt=""><p><strong>Fundamentos de UI/UX Design:</strong> Compreenda os princípios básicos e a importância do design centrado no usuário.</p></li>
+                                       <li class="overview-list-item"><img src="assets/icons/dashicons.svg" alt=""><p><strong>Pesquisa de Usuário:</strong> Métodos e técnicas para entender as necessidades e comportamentos dos usuários.</p></li>
+                                       <li class="overview-list-item"><img src="assets/icons/dashicons.svg" alt=""><p><strong>Wireframing e Prototipagem:</strong> Criação de esboços e protótipos interativos para testar ideias e funcionalidades.</p></li>
+                                       <li class="overview-list-item"><img src="assets/icons/dashicons.svg" alt=""><p><strong>Design Visual e Interativo:</strong> Práticas recomendadas para tipografia, cores, espaçamento e hierarquia visual.</p></li>
+                                    </ul>
+                                    <ul class="overview-list">
+                                       <li class="overview-list-item"><img src="assets/icons/dashicons.svg" alt=""><p><strong>Ferramentas de Design:</strong> Domine a ferramenta mais popular atualmente, Figma.</p></li>
+                                       <li class="overview-list-item"><img src="assets/icons/dashicons.svg" alt=""><p><strong>Teste de Usabilidade:</strong> Como conduzir testes de usabilidade e interpretar os resultados para melhorar o design.</p></li>
+                                       <li class="overview-list-item"><img src="assets/icons/dashicons.svg" alt=""><p><strong>Design para Dispositivos Móveis:</strong> Técnicas específicas para criar experiências excepcionais em dispositivos móveis.</p></li>
+                                       <li class="overview-list-item"><img src="assets/icons/dashicons.svg" alt=""><p><strong>Portfólio Profissional:</strong> Criação de um portfólio atraente para destacar suas habilidades e projetos.</p></li>
+                                    </ul>
+                                 </ul>
+                                     <!-- <p class="overview-paragraph">
+                                        If you wish to find out the skills that should be covered in a basic digital marketing course syllabus in India or anywhere around the world, then reading this blog will help. Before we delve into the advanced <a class="overview-links" href="#">digital marketing course</a> syllabus, lets look at the scope of digital marketing and what the future holds.
+                                     </p> -->
+  
+                                     <!-- <p class="overview-paragraph">
+                                        We focus a great deal on the understanding of behavioral psychology and influence triggers which are crucial for becoming a well rounded Digital Marketer. We understand that theory is important to build a solid foundation, we understand that theory alone is not going to get the job done so that is why this course is packed with practical hands-on examples that you can follow step by step.
+                                     </p> -->
+                                </div>
+                             </div>
+
+                             <span id="see-more-btn" class="see-more-btn">Ver mais</sp>
+                           </div>
+                        </div>
+
+                         <!-- tab-pane -->
+                         <div class="tab-pane fade" id="pills-instructor" role="tabpanel" aria-labelledby="pills-instructor-tab" tabindex="0">
+                           <!-- doubts -->
+                           <div class="tab-center doubts">
+                              <!-- doubts-list -->
+                              <div class="instructor-container">
+                                 
+                                 <div class="flex-column" style="gap: 1rem;">
+                                     <div class="flex-row align-center" style="gap: .5rem;">
+                                         <img width="52px" height="52px" src="assets/images/ceo.png" alt="">
+                                         <ul class="flex-column">
+                                             <li class="flex-row align-center" style="gap: .25rem;">
+                                                 <h2 style="line-height: 80%; font-size: 1.5rem;">Adilson Sonhi</h2>
+                                                 <img src="assets/icons/verification.svg" alt="">
+                                             </li>
+                                             <li><small>Full Stack Web Developer</small></li>
+                                         </ul>
+                                     </div>
+                                     
+                                     <p>Olá, sou Adilson Sonhi, <strong>Full Stack Web Developer</strong>, e fundador da <strong>Behave Academy</strong>. Com mais de 4 anos de experiência, contribuí para diversos projetos, focando na criação de interfaces web excepcionais. Meu percurso profissional inclui colaborações freelancer, entregando soluções inovadoras e de alta qualidade para uma variedade de clientes.</p>
+
+                                    <p>Como empreendedor entusiasta, estou constantemente em busca de novas oportunidades e soluções criativas. Acredito na evolução do ensino convencional, especialmente na área de tecnologia em constante mudança. Estou comprometido em desenvolver métodos de ensino inovadores para acompanhar esse ritmo acelerado de transformações tecnológicas.</p>
+
+                                    <p>No Instagram, compartilho principalmente sobre meu trabalho e projetos: <strong><a href="https://www.instagram.com/adilsonsonhi_/" target="_blank" >@adilsonsonhi_</a></strong></p>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+
+                        <!-- tab-pane -->
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                           <div class="tab-center community" style="align-items: center;">
+                              <img class="community-img" src="assets/icons/vector.svg" alt="">
+                              <p class="paragraph">Junte-se à Nossa Comunidade: Esclareça dúvidas, faça networking e dê um impulso na sua carreira! 🚀</p>
+                              <a class=" btn btn-primary community-btn" target="_blank" href="https://discord.gg/54r2Ba9s"><img src="assets/icons/discord-white.svg" alt="">Entrar na Comunidade</a>
+                           </div>
+                        </div>
+
+                        <!-- tab-pane -->
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                           <div class="tab-center documents">
+                              <!-- documents-list -->
+                              <ul class="documents-list">
+                                 <!-- documents-list-item -->
+                                 <li class="documents-list-item">
+                                    <a class="doc-link" href="assets/images/behave-logo.png" target="_blank"> <img class="doc-icon" src="assets/icons/material-symbols_download.svg" alt=""></br>behave-logo.png</a>
+                                    <small class="doc-small"><span>(15 KB)</span></small>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+
+                        <!-- tab-pane -->
+                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                           <!-- doubts -->
+                           <div class="tab-center doubts">
+                              <!-- doubts-list -->
+                              <ul class="accordion accordion-flush doubts-list" id="accordionFlushExample">
+                                 <!-- acocordion-item -->
+                                 <li class="accordion-item">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                       <span class="span">#01</span> Há suporte técnico para problemas na plataforma?
+                                       </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                       <div class="accordion-body">
+                                           Com certeza. Fornecemos suporte técnico pelo whatsapp clicando aqui <a href="https://wa.me/+244924187156" target="_blank" style="color: #d63384 !important">(+244) 924 187 156</a> ou pelo no email de <a class="ba-link" href="mailto:suporte@behave-academy.com" target="_blank" style="color: #d63384 !important">suporte@behave-academy.com</a> para ajudá-lo com quaisquer problemas que você possa encontrar ao usar nossa plataforma.
+                                       </div>
+                                    </div>
+                                 </li>
+                                 
+                                 <!-- acocordion-item
+                                 <li class="accordion-item">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                       <span class="span">#02</span> Pergunta 2
+                                       </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                       <div class="accordion-body">Placeholder content for this question</div>
+                                    </div>
+                                 </li>
+                                 -->
+
+                                 <!-- acocordion-item 
+                                 <li class="accordion-item">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                       <span class="span">#03</span> Pergunta 3
+                                       </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                       <div class="accordion-body">Placeholder content for this question</div>
+                                    </div>
+                                 </li>
+                                 -->
+                              </ul>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+
+                  <!-- footer -->
+                  <footer class="footer">
+                     <!-- footer-top-section 
+                     <section class="footer-top-section">
+                        <h4 class="footer-title">Desperte Seu Potencial:<br> Educação <span>Acessível para Transformar</span> Seu Futuro!</h4>
+                     </section>
+                     -->
+                     
+                     <!-- footer-nav -->
+                     <nav class="footer-nav">
+                        <ul class="footer-list">
+                           <li class="footer-list-item"><a href="https://discord.gg/54r2Ba9s" target="_blank" class="footer-link">Comunidade</a></li>
+                           <li class="footer-list-item"><a href="https://wa.me/+244924187156" target="_blank" class="footer-link">Central de Ajuda</a></li>
+                           <li class="footer-list-item"><a href="https://www.facebook.com/profile.php?id=61561728207283" target="_blank" class="footer-link">Facebook</a></li>
+                           <li class="footer-list-item"><a href="https://www.instagram.com/behave.academy/" target="_blank" class="footer-link">Instagram</a></li>
+                           <li class="footer-list-item"><a href="https://www.youtube.com/@behave.academy" target="_blank" class="footer-link">Youtube</a></li>
+                           <li class="footer-list-item"><a href="https://www.linkedin.com/company/103181705/admin/feed/posts/" target="_blank" class="footer-link">Linkedin</a></li>
+                           <li class="footer-list-item"><a href="https://www.behave-academy.com/termos-de-uso" target="_blank" class="footer-link">Termos de Uso</a></li>
+                           <li class="footer-list-item"><a href="https://www.behave-academy.com/politica-de-privacidade" target="_blank" class="footer-link">Política de Privacidade</a></li>
+                        </ul>
+                     </nav>
+
+                     <!-- footer-bottom-section -->
+                     <section class="footer-bottom-section">
+                        <small class="copyright-text">&copy 2024 www.behave-academy.com - Todos os direitos reservados</small>
+                     </section>
+                  </footer>
+                  
+               </div>
+            </main>
+
+            <!-- ================================= video-list-container ================================= -->
+            <aside class="aside-video-list">
+               <!-- instructor-section -->
+               <div class="instructor-section">
+                  <img class="instructor-img" src="assets/images/ceo.png" alt="Fotografia do instrutor">
+                  <div>
+                     <h3 class="instructor-name">Instrutor: Adilson Sonhi</h3>
+                     <p class="instructor-description">Full Stack Web Developer</p>
+                  </div>
+               </div>
+
+               <!-- course-title -->
+               <div class="course-detail">
+                  <h1 class="course-title">Curso de Design de Interfaces</h1>
+                  <p class="badge-container">
+                     <span class="badge">5 Módulos</span>
+                     <span class="badge">58 Aulas</span>
+                  </p>
+               </div>
+
+               <!-- accordion -->
+               <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="course-accordion">
+                          
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <div class="accordion-header">
+                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseZero" aria-expanded="true" aria-controls="panelsStayOpen-collapseZero">
+                                  <h6 class="truncate-text">Módulo 00: <span class="accordion-header-span" >Comece aqui!!</span></h6>
+                               </button>
+                            </div>
+                            <div id="panelsStayOpen-collapseZero" class="accordion-collapse collapse show">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 0</h2> -->
+                                     <ul class="category-list" id="category-1">
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/v-1.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video1001.mp4">Como Navegar na Plataforma</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 2min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgba(45, 102, 201, 0.9); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/v-2.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video1002.mp4">Comunidade & Suporte</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 3min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgba(45, 102, 201, 0.9); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+    
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/v-3.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video1003.mp4">Estrutura do curso & Procjetos</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt="">Duração: 4min</span></small>
+                                                    <!-- <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small> -->
+                                                    <!-- <small class="list-small-description" style="background-color: rgba(45, 201, 55, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small> -->
+                                                    <small class="list-small-description" style="background-color: rgba(45, 102, 201, 0.9); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                  <h6 class="truncate-text">Módulo 01: <span class="accordion-header-span" >Fundamentos Essenciais de UX/UI Design</span></h6>
+                               </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 1</h2> -->
+                                     <ul class="category-list" id="category-1">
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-01.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video1.mp4">Aula 01: Uma breve história sobre o Design</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 5min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgba(45, 102, 201, 0.9); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-02.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video2.mp4">Aula 02: UX Design, UI Design & Product Design - PART 1</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 5min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgba(45, 102, 201, 0.9); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-03.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video3.mp4">Aula 03: UX Design, UI Design & Product Design - PART 2</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 5min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgba(45, 102, 201, 0.9); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-04.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video4.mp4">Aula 04: UX Design, UI Design & Product Design - PART 3</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 5min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgba(45, 102, 201, 0.9); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-05.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video5.mp4">Aula 05: Conhecendo o Figma</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 2min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgba(45, 102, 201, 0.9); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-06.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video6.mp4">Aula 06: Criação de frames, e formas geométricas</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: ---</span></small>
+                                                    <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-07.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video7.mp4">Aula 07: Tipografia e fontes</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: ---</span></small>
+                                                    <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-08.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video8.mp4">Aula 08:Botões</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: ---</span></small>
+                                                    <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-09.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video9.mp4">Aula 09: Psicologia de cores</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: ---</span></small>
+                                                    <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+    
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                  <h6 class="truncate-text">Módulo 02: <span class="accordion-header-span" >Design de Aplicativo Móvel: Protótipo para E-commerce</span></h6>
+                               </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 2</h2> -->
+                                     <ul class="category" id="category-2">
+                                        <!-- category-list-item 
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-10.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video10.mp4">Aula 10: Pesquisa com Usuários (Parte 1)</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt="">Duração: ---</span></small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        -->
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+    
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                  <h6 class="truncate-text">Módulo 03: <span class="accordion-header-span" >Técnicas Avançadas de UX Design</span></h6>
+                               </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 2</h2> -->
+                                     <ul class="category" id="category-3">
+                                        <!-- category-list-item
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-18.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video18.mp4">Aula 18: Fundamentos de Wireframing</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt="">Duração: ---</span></small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        -->
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+    
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                  <h6 class="truncate-text">Módulo 04: <span class="accordion-header-span" >Protótipo de Website para Loja Online</span></h6>
+                               </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 2</h2> -->
+                                     <ul class="category" id="category-4">
+                                        <!-- category-list-item
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-27.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video27.mp4">Aula 27: Componentes de UI (Parte 1)</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt="">Duração: ---</span></small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        -->
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+    
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                  <h6 class="truncate-text">Módulo 05: <span class="accordion-header-span" >UI Design Pro: Experiências Interativas e Design Moderno</span></h6>
+                               </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 2</h2> -->
+                                     <ul class="category" id="category-5">
+                                        <!-- category-list-item 
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-36.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video36.mp4">Aula 36: Trabalhando com Desenvolvedores (Parte 1)</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt="">Duração:</span></small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        -->
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+    
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                                  <h6 class="truncate-text"><span class="accordion-header-span" >*** Bónus ***</span></h6>
+                               </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 2</h2> -->
+                                     <ul class="category" id="category-6">
+                                        <!-- category-list-item 
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-44.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video44.mp4">Aula 44: Design para Mobile (Parte 1)</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt="">Duração: </span></small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        -->
+                                        
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+    
+                     </div>
+               </div>
+            </aside>
+
+            <!-- ================================= offcanvas ================================= -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+               <!-- offcanvas-header -->
+               <div class="offcanvas-header flex-row justify-center align-center" style="border-bottom: 1px solid var(--border)">
+                     <img src="assets/images/behave-logo-white.png" width="180px" alt="logo" style="margin-top: 20px !important;">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+
+               <!-- offcanvas-body -->
+               <div class="offcanvas-body">
+
+                  <!-- instructor-section -->
+                  <div class="instructor-section" style="padding: .5rem 0 !important;">
+                     <img class="instructor-img" src="assets/images/ceo.png" alt="Fotografia do instrutor">
+                     <div>
+                        <h3 class="instructor-name">Instrutor: Adilson Sonhi</h3>
+                        <p class="instructor-description">Full Stack Web Developer</p>
+                     </div>
+                  </div>
+
+                  <!-- course-title -->
+                  <div class="course-title" style="padding: .5rem 0 !important; padding-bottom: .5rem !important;">
+                     <h1 class="menu-course-title">Curso de Design de Interfaces</h1>
+                     <p class="badge-container">
+                        <span class="badge">7 Módulos</span>
+                        <span class="badge">58 Aulas</span>
+                     </p>
+                  </div>
+
+               <!-- accordion -->
+               <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="course-accordion">
+                          
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <div class="accordion-header">
+                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseZero" aria-expanded="true" aria-controls="panelsStayOpen-collapseZero">
+                                  <h6 class="truncate-text">Módulo 00: <span class="accordion-header-span" >Comece aqui!!</span></h6>
+                               </button>
+                            </div>
+                            <div id="panelsStayOpen-collapseZero" class="accordion-collapse collapse show">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 0</h2> -->
+                                     <ul class="category-list" id="category-1">
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/v-1.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video1001.mp4">Como Navegar na Plataforma</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 2min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgba(45, 201, 55, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/v-2.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video1002.mp4">Comunidade & Suporte</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 3min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgba(45, 201, 55, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+    
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/v-3.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video1003.mp4">Estrutura do curso & Procjetos</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt="">Duração: 4min</span></small>
+                                                    <!-- <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small> -->
+                                                    <small class="list-small-description" style="background-color: rgba(45, 201, 55, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                  <h6 class="truncate-text">Módulo 01: <span class="accordion-header-span" >Fundamentos Essenciais de UX/UI Design</span></h6>
+                               </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 1</h2> -->
+                                     <ul class="category-list" id="category-1">
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-01.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video1.mp4">Aula 01: Uma breve história sobre o Design</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 5min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgba(45, 201, 55, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-02.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video2.mp4">Aula 02: UX Design, UI Design & Product Design - PART 1</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 5min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgba(45, 201, 55, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Disponível</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-03.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video3.mp4">Aula 03: UX Design, UI Design & Product Design - PART 2</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 5min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-04.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video4.mp4">Aula 04: UX Design, UI Design & Product Design - PART 3</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 5min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-05.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video5.mp4">Aula 05: Conhecendo o Figma</span>
+                                                 <div class="flex-row" style="gap: 8px;">
+                                                    <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: 2min</span></small>
+                                                    <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small>
+                                                 </div>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-06.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video6.mp4">Aula 06: Criação de frames, e formas geométricas</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: ---</span></small>
+                                                    <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-07.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video7.mp4">Aula 07: Tipografia e fontes</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: ---</span></small>
+                                                    <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-08.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video8.mp4">Aula 08:Botões</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: ---</span></small>
+                                                    <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        <!-- category-list-item -->
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-09.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video9.mp4">Aula 09: Psicologia de cores</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt=""> Duração: ---</span></small>
+                                                    <small class="list-small-description" style="background-color: rgb(219, 123, 43, 0.7); border-radius: 4px; color: #fff; padding: 0 4px;">Em breve</small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+    
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                  <h6 class="truncate-text">Módulo 02: <span class="accordion-header-span" >Design de Aplicativo Móvel: Protótipo para E-commerce</span></h6>
+                               </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 2</h2> -->
+                                     <ul class="category" id="category-2">
+                                        <!-- category-list-item 
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-10.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video10.mp4">Aula 10: Pesquisa com Usuários (Parte 1)</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt="">Duração: ---</span></small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        -->
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+    
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                  <h6 class="truncate-text">Módulo 03: <span class="accordion-header-span" >Técnicas Avançadas de UX Design</span></h6>
+                               </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 2</h2> -->
+                                     <ul class="category" id="category-3">
+                                        <!-- category-list-item
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-18.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video18.mp4">Aula 18: Fundamentos de Wireframing</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt="">Duração: ---</span></small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        -->
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+    
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                  <h6 class="truncate-text">Módulo 04: <span class="accordion-header-span" >Protótipo de Website para Loja Online</span></h6>
+                               </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 2</h2> -->
+                                     <ul class="category" id="category-4">
+                                        <!-- category-list-item
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-27.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video27.mp4">Aula 27: Componentes de UI (Parte 1)</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt="">Duração: ---</span></small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        -->
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+    
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                  <h6 class="truncate-text">Módulo 05: <span class="accordion-header-span" >UI Design Pro: Experiências Interativas e Design Moderno</span></h6>
+                               </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 2</h2> -->
+                                     <ul class="category" id="category-5">
+                                        <!-- category-list-item 
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-36.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video36.mp4">Aula 36: Trabalhando com Desenvolvedores (Parte 1)</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt="">Duração:</span></small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        -->
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+    
+                         <!-- accordion-item -->
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                                  <h6 class="truncate-text"><span class="accordion-header-span" >*** Bónus ***</span></h6>
+                               </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                               <div class="accordion-body">
+                                  <div class="video-category">
+                                     <!-- <h2>MODULO 2</h2> -->
+                                     <ul class="category" id="category-6">
+                                        <!-- category-list-item 
+                                        <li class="category-list-item">
+                                           <a href="#" class="video-link">
+                                              <img class="mini-thumbnail" src="assets/images/aula-44.png" alt="">
+                                              <div>
+                                                 <span class="video-title" data-src="assets/videos/video44.mp4">Aula 44: Design para Mobile (Parte 1)</span>
+                                                 <small class="list-small-description"><span><img class="svg-white" src="assets/icons/play.svg" alt="">Duração: </span></small>
+                                              </div>
+                                           </a>
+                                        </li>
+                                        -->
+                                        
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+    
+                     </div>
+               </div>
+
+               <!-- coyright-text-sidebar -->
+               <div class="copyright-text-sidebar flex-column align-center">
+                  <!-- <small>Behave Academy Copyright © 2024</small> -->
+                  <p class="copyright-text" style="width: 280px !important; font-size: 12px;">&copy 2024 www.behave-academy.com - Todos os direitos reservados</p>
+                  
+                  <!--
+                  <ul style="display: flex; gap: 4px; justify-content: center;">
+                     <li><a href="#"><img src="assets/icons/facebook.svg" alt="Facebook da BehaveAcademy"></a></li>
+                     <li><a href="#"><img src="assets/icons/instagram.svg" alt="Instagram da BehaveAcademy"></a></li>
+                     <li><a href="#"><img src="assets/icons/linkedin.svg" alt="Linkedin da BehaveAcademy"></a></li>
+                  </ul>
+                  -->
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- bootstrap js links -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!--Firebase SDK-->
+      <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+      <!-- js files -->
+      <script src="../js/firebase-config.js"></script>
+      <!-- <script src="../js/app.js"></script> -->
+      <script src="js/accordion.js"></script>
+   </body>
+</html>
